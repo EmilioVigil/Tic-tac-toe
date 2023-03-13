@@ -1,0 +1,22 @@
+El useEffect: es un hook de react que nos permite ejecutar codigo arbitrario cuando el componente se renderiza en el dom
+o dependiendo de las dependencias que nosotros querramos.
+
+import {useEffect} from 'react'
+
+const Componente = ()=>{
+    //Se lo pone en el cuerpo del componente
+
+
+    //useEffect( codigo arbitrario , dependencias)
+    useEffect( ()=>{
+        console.log('Codigo a ejecutar')
+    } , []) ---> En ese array irian las dependencias
+}
+
+-> Como minimo el useEffect se ejecuta una sola vez, si no ponemos dependencias se ejecutara cuadno el componente
+se renderiza
+-> Si ponemos un array vacio, solo se ejecuta una sola vez
+
+
+
+Ponemos un ejemplo en App.jsx
